@@ -1,6 +1,6 @@
 /* Corpo */
 body{
-    width: 1440;
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Bai Jamjuree', sans-serif;
@@ -11,6 +11,8 @@ header{
    background-image: url(../images/bg-header-desktop.png); 
    background-repeat: no-repeat;
    height: 500px;
+   width: 100%;
+   margin-bottom: 100px;
 }
 
 /* Logo */
@@ -38,8 +40,30 @@ header{
     align-content: center;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 100px;
 }
+@media screen and (max-width:800px) {
+    .botoesDownload{
+        margin-bottom: 20px;
+    }
+    picture img{
+        width: 400px;
+    }
+    .imageComputer{
+        width: 400px;
+        height: 300px;
+    }
+    .introducao{
+        font-size: 14px;
+    }
+    section h1 {
+        font-size: 14px;
+    }
+    section p{
+        font-size: 12px;
+        opacity: 60%;
+    }
+} 
+
 #btnIos{
     width: 170px;
     height: 40px;
@@ -72,6 +96,30 @@ span{
     margin-top: 150px;
 }
 
+@media screen and (max-width:900px) {
+    article{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .imageDevices{
+        width: 400px;
+     }
+     #imgs{
+        width:20px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 100px;
+     }
+     .icons-app{
+        margin-top: 400px;
+        margin-left: 20px; flex-direction: column;
+     }
+     .links-footer{
+        flex-direction: column;
+     }
+}
 /* ARTICLE */
 
 article{
@@ -115,6 +163,7 @@ section p{
     margin-top: 100px;
     margin-bottom: 150px;
 }
+
 /* footer */
 
 footer{
@@ -169,3 +218,32 @@ li a:hover{
 .icons-app svg:hover path {
     fill:  hsl(171, 66%, 44%);
 }
+
+@media screen and (max-width:1100px) {
+   .logo-footer{
+    margin-left: 10px;
+   }
+   footer{
+    height: 300px;
+
+   }
+   @media screen and (max-width:1000px) {
+    .icons-footer{
+        margin-left: 50px;
+    }
+
+   }
+ 
+}
+@media screen and (max-width:600px) {
+    .icons-footer{
+        margin-left: 20px;
+    }
+    .column{
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: 9px;
+        display: flex;
+        flex-direction: column;
+    }
+   }
